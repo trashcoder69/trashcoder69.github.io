@@ -41,4 +41,8 @@ form{
     
 }
 
+pre{
+    display:inline;
+    text-align: left;
+}
 
