@@ -68,3 +68,7 @@ p {
 fieldset p {
     text-align: left;
 }
+
+img {
+    border-radius: 50%;
+}
