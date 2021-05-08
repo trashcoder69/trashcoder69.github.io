@@ -51,7 +51,10 @@ form fieldset p {
 }
 
 .align {
+    margin: auto;
+    width: 50%;
     text-align: left;
+    padding: 10px;
 }
     
 
