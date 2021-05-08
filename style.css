@@ -4,7 +4,7 @@ body {
     height: 100%;
     display: grid;
     vertical-align: middle;
-    text-align: center;
+    
     font-family: "Exo", sans-serif;
     /*    font-family: "Menlo", "Meslo LG", monospace; */
     color: #fff;
