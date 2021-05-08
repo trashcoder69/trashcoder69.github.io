@@ -56,7 +56,9 @@ form fieldset p {
     text-align: left;
     padding: 10px;
 }
-    
+
+.circle {
+    border-radius: 50%;
 
 p {
     text-align: left;
