@@ -17,6 +17,7 @@ body {
 
 abbr {
   display: inline;
+  padding: 35px;
 }
 
 fieldset {
