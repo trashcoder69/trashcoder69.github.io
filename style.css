@@ -5,7 +5,8 @@ body {
     display: grid;
     vertical-align: middle;
     
-    font-family: "Exo", sans-serif;
+    font-family: "ahamono-regular","Helvetica Neue",
+        Helvetica,sans-serif, "Exo", sans-serif;
     /*    font-family: "Menlo", "Meslo LG", monospace; */
     color: #fff;
     background: linear-gradient(-45deg, #ee7752, #e73c7e,#23a6d5,  #23d5c6);
