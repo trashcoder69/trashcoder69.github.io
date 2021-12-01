@@ -78,3 +78,8 @@ fieldset p {
 img {
     border-radius: 50%;
 }
+
+::selection {
+    background-color: rgba(228, 99, 82, 1);
+    color: white;
+}
