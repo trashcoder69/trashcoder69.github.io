@@ -121,3 +121,16 @@ img {
     background-color: rgba(228, 99, 82, 1);
     color: white;
 }
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    corder-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width:80%
+}
