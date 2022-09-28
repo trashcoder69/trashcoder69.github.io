@@ -96,6 +96,35 @@
                 <p class="box"><details><summary><bdo dir="rtl">Is Cody Chloé? or Is Chloé Cody</summary>Is Cody Chloé? or Is Chloé Cody</details></p>
                 <br>
                 <p></p>
+                
+                <script type="text/javascript">
+                    const modal = document.querySelector("#modal");
+                    const openModal = document.querySelector(".open-button");
+                    const closeModal = document.querySelector(".close-button");
+
+                    openModal.addEventListener("click", () => {
+                      modal.showModal();
+                    });
+
+                    closeModal.addEventListener("click", () => {
+                      modal.close();
+                    });
+                </script>
+
+                <button class="button open-button"> Register </button>
+                
+                <dialog class="modal" id="modal">
+                    <h2> Register to be more CODYlisation</h2>
+                    <button class="button close-button">close</button>
+                    <p> Did you enjoyed the glims of being CODY? </p>
+                    <p> You can enjoy the life of CODY as well by simply register as a CODY fan club member below</p>
+                    <form class="form" method="dialog">
+                        <label>Your name <input type="text"></label>
+                        <label>Your email <input type="email"></label>
+                        <button class="button" type="submit">submit form</button>
+                    </form>
+                </dialog>
+                    
                 <p> If <kbd>Co</kbd> + <kbd>Dy</kbd> = <kbd>Chloé</kbd> 
                 <br>
                     Then who is <details>
