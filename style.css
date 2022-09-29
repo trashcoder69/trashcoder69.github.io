@@ -47,7 +47,7 @@ fieldset {
 
 :root:has(.theme > [value="rainbow"]:checked) {
   --fg: hsl(200 50% 10%);
-  --bg: linear-gradient(red, yellow, orange, blue);
+  --bg: linear-gradient(-45deg, #ee7752, #e73c7e,#23a6d5,  #23d5c6);
   --accent: hsl(250 75% 40%);
 }
 
