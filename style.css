@@ -33,6 +33,156 @@ fieldset {
     text-align: center;
 }
 
+:root {
+  --bg: hsl(200 50% 5%);
+  --fg: hsl(200 10% 98%);
+  --accent: hsl(250 75% 80%);
+}
+
+:root:has(.theme > [value="light"]:checked) {
+  --fg: hsl(200 50% 10%);
+  --bg: hsl(200 10% 92%);
+  --accent: hsl(250 75% 40%);
+}
+
+:root:has(.theme > [value="rainbow"]:checked) {
+  --fg: hsl(200 50% 10%);
+  --bg: linear-gradient(red, yellow, orange, blue);
+  --accent: hsl(250 75% 40%);
+}
+
+html:has(:modal) {
+  overflow: hidden;
+  padding-inline-end: 16px;
+}
+
+.form-group:has(:not(:placeholder-shown):valid) > label {
+  color: forestgreen;
+}
+
+.grid-columns {
+  display: grid;
+  gap: 1rem;
+
+  grid-template-columns: repeat(var(--col-count, 1), 1fr);
+}
+
+// has 2 children
+.grid-columns:has(:nth-child(2):is(:last-child)) {
+  --col-count: 2;
+}
+
+.grid-columns:has(:nth-child(2):is(:last-child)) :last-child {
+  --col-count: 2;
+  color: red;
+}
+
+// child count can be divided by 3
+.grid-columns:has(:nth-child(3n):is(:last-child)) {
+  --col-count: 3;
+}
+
+.grid-columns:has(:nth-child(3n):is(:last-child)) :last-child {
+  color: pink;
+}
+
+// child count can be divided by 4
+.grid-columns:has(:nth-child(4n):is(:last-child)) {
+  --col-count: 4;
+}
+
+// child count can be divided by 5
+.grid-columns:has(:nth-child(5n):is(:last-child)) {
+  outline: 3px solid lime;
+  --col-count: 2;
+}
+
+// 5th child is the last child, span the full space
+.grid-columns:has(:nth-child(5):is(:last-child)) > :last-child {
+  grid-column: 1 / -1;
+}
+
+.carousel {
+  display: grid;
+  gap: 1rem;
+  margin-block: 2rem;
+  padding-block: 2rem;
+}
+
+.carousel > img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.carousel:not(:has(:nth-child(5))) {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.carousel:has(:nth-child(5)) {
+  grid-auto-flow: column;
+  grid-auto-columns: 20%;
+  overflow-x: scroll;
+  padding-block: 2rem;
+}
+
+/* general styling */
+
+body {
+  font-family: system-ui;
+  font-size: 1.5rem;
+  padding: 2rem;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+:modal::backdrop {
+  background: rgb(0 0 0 / 0.5);
+}
+
+.example-modal > form {
+  display: grid;
+  gap: 1rem;
+  margin-block-start: 1rem;
+}
+
+.form-group {
+  display: grid;
+  place-items: start;
+}
+
+article {
+  max-width: 50rem;
+  margin-inline: auto;
+}
+
+article + article {
+  border-block-start: 2px solid hsl(200 10% 20%);
+  margin-block-start: 4rem;
+  padding-block-start: 4rem;
+}
+
+.article__title {
+  color: var(--accent);
+  margin: 0;
+}
+
+.article__subtitle {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-block-end: 5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.full-screen {
+  padding-block: 5rem;
+}
+
+
 .cookie-consent{
   position: fixed;
 bottom: 8px;
