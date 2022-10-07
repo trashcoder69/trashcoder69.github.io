@@ -337,3 +337,7 @@ form {
     width: 500px;
     max-width:80%
 }
+
+:visited {
+    color: pink;
+}
