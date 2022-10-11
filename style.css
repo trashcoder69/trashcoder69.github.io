@@ -342,22 +342,22 @@ form {
     color: pink;
 }
 
-.square {
+.box {
     margin: 50px;
     width: 200px;
     height: 200px;
     background: pink;
 }
 
-.square.small {
+.box.small {
     scale: .5;
 }
 
-.square.moved {
+.box.moved {
     translate: 50px;
 }
 
-.square:hover {
+.box:hover {
     animation: roate 500ms infitnte aliternate;
 }
 
@@ -367,7 +367,7 @@ form {
     }
     
     100% {
-        roate: 45deg;
+        rotate: 45deg;
     }
 }
 
