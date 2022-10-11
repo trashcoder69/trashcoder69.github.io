@@ -14,7 +14,7 @@ body {
     animation: gradientBG 15s ease infinite;
     border-radius: 50px;
     font-size: 150%;
-    -webkit-text-stroke: 2px orange;
+    <!-- -webkit-text-stroke: 2px orange; -->
 }
 
 
