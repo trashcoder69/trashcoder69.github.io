@@ -341,3 +341,33 @@ form {
 :visited {
     color: pink;
 }
+
+.square {
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    background: pink;
+}
+
+.square.small {
+    scale: .5;
+}
+
+.square.moved {
+    translate: 50px;
+}
+
+.square:hover {
+    animation: roate 500ms infitnte aliternate;
+}
+
+@keyframe rotate {
+    0% {
+        rotate: 0;
+    }
+    
+    100% {
+        roate: 45deg;
+    }
+}
+
