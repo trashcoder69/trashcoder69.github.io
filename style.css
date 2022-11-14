@@ -37,6 +37,7 @@ fieldset {
 :root {
   --bg: hsl(200 50% 5%);
   --fg: hsl(200 10% 98%);
+  --fc: hsl(0 0% 100%);
   --accent: hsl(250 75% 80%);
 }
 
