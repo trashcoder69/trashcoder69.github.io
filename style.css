@@ -36,9 +36,10 @@ fieldset {
 
 :root {
   --bg: hsl(200 50% 5%);
-  --fg: hsl(200 10% 98%);
+  --fg: hsl(0 0% 100%);
   --fc: hsl(0 0% 100%);
   --accent: hsl(250 75% 80%);
+  -- 
 }
 
 :root:has(.theme > [value="light"]:checked) {
@@ -48,7 +49,7 @@ fieldset {
 }
 
 :root:has(.theme > [value="rainbow"]:checked) {
-  --fg: hsl(200 50% 10%);
+  --fg: hsl(147 50% 47%);
   --bg: linear-gradient(-45deg, #ee7752, #e73c7e,#23a6d5,  #23d5c6);
   --accent: hsl(250 75% 40%);
 }
