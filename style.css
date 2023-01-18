@@ -18,6 +18,10 @@ body {
     user-select: none;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
 
 .container {
     border: 5px solid limegreen;
