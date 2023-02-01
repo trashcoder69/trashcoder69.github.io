@@ -409,7 +409,7 @@ inputbox input {
     letter-spacing: 0px;
 }
 .inputBox #btn {
-    posistion: relative;
+    position: relative;
     cursor: pointer;
     color: #fff;
     background: #333;
