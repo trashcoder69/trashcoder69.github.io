@@ -210,7 +210,7 @@ border-radius: 3px;
 }
 
 .allow-button{
-      height: 20px;
+    height: 20px;
     width: 104px;
     color: #fff;
     font-size: 12px;
@@ -338,7 +338,7 @@ form {
     left: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid black;
-    corder-radius: 10px;
+    border-radius: 10px;
     z-index: 10;
     background-color: white;
     width: 500px;
@@ -420,6 +420,4 @@ inputbox input {
 }
 .inputBox #btn:active {
     background: #9c27b0;
-
-
 
